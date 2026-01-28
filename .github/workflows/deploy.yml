@@ -19,7 +19,7 @@ jobs:
       - run: npm run build -- --configuration production
 
       - name: Inspect dist
-          run: |
+        run: |
           ls -la dist
           ls -la dist/* || true
           ls -la dist/*/browser || true
